@@ -1,0 +1,17 @@
+{
+  "name": "oleg/learning-english",
+  "description": "Learning English words and phrases",
+  "license": "NIT",
+  "autoload": {
+      "psr-4": {
+        "Oleg\\LearningEnglish\\": "src/"
+      }
+  },
+  "autoload-dev": {
+      "psr-4": {
+        "Test\\": "tests/"
+      }
+  },
+  "minimum-stability": "dev",
+  "requre": {}
+}
