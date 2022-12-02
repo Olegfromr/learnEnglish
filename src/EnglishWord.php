@@ -4,16 +4,21 @@ namespace Oleg\LearningEnglish;
 
 class EnglishWord
 {
-    public string $name;
-    public int $id;
+    protected string $name;
+    protected int $id;
     public function __construct(int $id, string $word)
     {
         $this->id = $id;
         $this->name = $word;
     }
-    public function __get():string
+
+    public function __set($name, $value)
     {
-        return $this->name;
+        $this->$name = $value;
+    }
+    public function __get($name)
+    {
+        return $this->$name;
     }
     public function __toString()
     {
