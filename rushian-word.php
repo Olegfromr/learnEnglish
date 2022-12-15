@@ -1,0 +1,2 @@
+rushian-word
+<?php
